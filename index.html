@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>MerchCo | Custom T-Shirts & Premium Merchandise</title>
+    <meta name="description" content="Design your own custom t-shirts or shop our premium collection of merchandise. High-quality apparel, easy customization tools, and fast delivery at MerchCo.">
+    <meta name="keywords" content="custom t-shirts, merch store, t-shirt printing, personalized apparel, custom merchandise, graphic tees, buy t-shirts online, premium cotton tees">
+    <meta name="author" content="MerchCo">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://merchco.example.com/">
+    <meta property="og:title" content="MerchCo | Custom T-Shirts & Premium Merchandise">
+    <meta property="og:description" content="Design your own custom t-shirts or shop our premium collection of merchandise. High-quality apparel, easy customization tools, and fast delivery at MerchCo.">
+    <meta property="og:image" content="https://picsum.photos/id/1018/1200/630">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://merchco.example.com/">
+    <meta property="twitter:title" content="MerchCo | Custom T-Shirts & Premium Merchandise">
+    <meta property="twitter:description" content="Design your own custom t-shirts or shop our premium collection of merchandise. High-quality apparel, easy customization tools, and fast delivery at MerchCo.">
+    <meta property="twitter:image" content="https://picsum.photos/id/1018/1200/630">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Polyfill process for browser environment
+      window.process = { env: { NODE_ENV: 'development' } };
+
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#F7F8FA',
+              panel: '#FFFFFF',
+              border: '#E5E7EB',
+              'text-primary': '#1B1B1B',
+              'text-secondary': '#6B7280',
+              accent: '#4F46E5', // Example accent color
+              success: '#10B981',
+              warning: '#F59E0B',
+              error: '#EF4444',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              poppins: ['Poppins', 'sans-serif'],
+            },
+            borderRadius: {
+              'card': '14px',
+            },
+            boxShadow: {
+              'soft': '0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.3.1",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client?deps=react@18.3.1",
+    "react-dom": "https://esm.sh/react-dom@18.3.1?deps=react@18.3.1",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.23.1?deps=react@18.3.1,react-dom@18.3.1",
+    "recharts": "https://esm.sh/recharts@2.13.0?deps=react@18.3.1,react-dom@18.3.1",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2.43.4",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-background text-text-primary font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
